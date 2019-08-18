@@ -40,6 +40,9 @@ public class DigitalObserver implements Runnable, AutoCloseable {
 	
 	@Override
 	public void run() {
+		// First get the initial state
+		currentValue = input.get();
+		
 		while (running) {
 			boolean newValue = input.get();
 			if (newValue != currentValue) {
