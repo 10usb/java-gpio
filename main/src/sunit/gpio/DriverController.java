@@ -8,7 +8,7 @@ import sunit.gpio.digital.DigitalPin;
  * 
  * @author 10usb
  */
-public class DriverController implements DigitalInputController, DigitalOutputController {
+public class DriverController implements DigitalController {
 	private Driver driver;
 	
 	/**
