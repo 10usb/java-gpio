@@ -1,0 +1,7 @@
+﻿*.class
+drivers/wiringpi/gpio/.classpath
+drivers/wiringpi/gpio/.project
+drivers/wiringpi/jni/.vscode
+main/.settings
+main/.classpath
+main/.project

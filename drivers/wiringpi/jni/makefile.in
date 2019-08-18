@@ -1,0 +1,5 @@
+CP=cp
+RM=rm -f
+MKDIR=mkdir
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-armhf
+JAVA_SYSTEM=linux
