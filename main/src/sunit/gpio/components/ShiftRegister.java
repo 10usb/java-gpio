@@ -32,7 +32,7 @@ public class ShiftRegister implements DigitalOutputController, Flushable {
 	public void flush() {
 		synchronized (bits) {
 			if (dirty) {
-				for (int index = bits.length - 1; index >= 0; index++) {
+				for (int index = bits.length - 1; index >= 0; index--) {
 					// First prepare the data pin
 					data.set(bits[index]);
 					
