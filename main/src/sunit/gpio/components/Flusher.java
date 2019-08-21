@@ -7,16 +7,16 @@ import sunit.gpio.DigitalOutputController;
 import sunit.gpio.digital.DigitalFlusher;
 
 public class Flusher implements DigitalOutputController {
-	private DigitalOutput pin;
+	private DigitalOutput[] pins;
 	private Flushable flushable;
 
-	public Flusher(DigitalOutput pin, Flushable flushable) {
-		this.pin = pin;
+	public Flusher(Flushable flushable, DigitalOutput[] pins) {
+		this.pins = pins;
 		this.flushable =flushable;
 	}
 
 	@Override
 	public DigitalOutput getDigitalOutput(int index) {
-		return new DigitalFlusher(pin, flushable);
+		return new DigitalFlusher(pins[index], flushable);
 	}
 }
