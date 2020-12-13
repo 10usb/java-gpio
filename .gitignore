@@ -5,3 +5,5 @@ drivers/wiringpi/jni/.vscode
 main/.settings
 main/.classpath
 main/.project
+drivers/serial/java/.project
+drivers/serial/java/.classpath
